@@ -5,7 +5,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "qeep\\Telegram\\DTO\\": "src/"
+            "QEEP\\Telegram\\DTO\\": "src/"
         }
     },
     "scripts": {
