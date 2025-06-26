@@ -1,6 +1,6 @@
 <?php
 
-namespace qeep\Telegram\DTO\Message\Sent;
+namespace QEEP\Telegram\DTO\Message\Sent;
 
 class TelegramDeletionMessage extends AbstractTelegramSendMessage
 {

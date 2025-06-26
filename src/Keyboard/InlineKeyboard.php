@@ -1,6 +1,6 @@
 <?php
 
-namespace qeep\Telegram\DTO\Keyboard;
+namespace QEEP\Telegram\DTO\Keyboard;
 
 class InlineKeyboard extends Keyboard
 {

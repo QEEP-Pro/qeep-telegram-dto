@@ -1,6 +1,6 @@
 <?php
 
-namespace qeep\Telegram\DTO\Message\Received;
+namespace QEEP\Telegram\DTO\Message\Received;
 
 use JMS\Serializer\Annotation as JMS;
 

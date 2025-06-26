@@ -1,6 +1,6 @@
 <?php
 
-namespace qeep\Telegram\DTO\Keyboard;
+namespace QEEP\Telegram\DTO\Keyboard;
 
 use JMS\Serializer\Annotation as JMS;
 
@@ -8,7 +8,7 @@ use JMS\Serializer\Annotation as JMS;
 class ButtonLine
 {
     #[JMS\Expose]
-    #[JMS\Type('array<qeep\Telegram\DTO\Keyboard\Button>')]
+    #[JMS\Type('array<QEEP\Telegram\DTO\Keyboard\Button>')]
     private array $buttons = [];
 
     public function __construct(ButtonInterface ...$buttons)

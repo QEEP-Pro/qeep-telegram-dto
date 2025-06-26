@@ -1,11 +1,11 @@
 <?php
 
-namespace qeep\Telegram\DTO\Message\Received;
+namespace QEEP\Telegram\DTO\Message\Received;
 
 use DateTimeImmutable;
 use DateTimeInterface;
 use JMS\Serializer\Annotation as JMS;
-use qeep\Telegram\DTO\Keyboard\InlineKeyboard;
+use QEEP\Telegram\DTO\Keyboard\InlineKeyboard;
 
 #[JMS\ExclusionPolicy(JMS\ExclusionPolicy::ALL)]
 class CallbackMessage

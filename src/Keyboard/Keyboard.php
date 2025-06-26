@@ -1,6 +1,6 @@
 <?php
 
-namespace qeep\Telegram\DTO\Keyboard;
+namespace QEEP\Telegram\DTO\Keyboard;
 
 use JMS\Serializer\Annotation as JMS;
 
@@ -12,7 +12,7 @@ abstract class Keyboard
      */
     #[JMS\Expose]
     #[JMS\SerializedName('inline_keyboard')] // Это единственное отличие для inline клавиатуры
-    #[JMS\Type('array<qeep\Telegram\DTO\Keyboard\ButtonLine>')]
+    #[JMS\Type('array<QEEP\Telegram\DTO\Keyboard\ButtonLine>')]
     protected array $buttonLines = [];
 
     public function addLine(ButtonLine $buttonLine): self

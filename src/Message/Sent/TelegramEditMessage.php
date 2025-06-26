@@ -1,8 +1,8 @@
 <?php
 
-namespace qeep\Telegram\DTO\Message\Sent;
+namespace QEEP\Telegram\DTO\Message\Sent;
 
-use qeep\Telegram\DTO\Keyboard\Keyboard;
+use QEEP\Telegram\DTO\Keyboard\Keyboard;
 
 class TelegramEditMessage extends AbstractTelegramSendMessage
 {
