@@ -1,0 +1,30 @@
+{
+    "name": "qeep/telegram-dto",
+    "description": "Common Telegram DTOs for all services",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "qeep\\Telegram\\DTO\\": "src/"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "git config core.hooksPath .git-hooks || true"
+        ],
+        "post-update-cmd": [
+            "git config core.hooksPath .git-hooks || true"
+        ],
+        "fix": "vendor/bin/php-cs-fixer fix"
+    },
+    "require": {
+        "php": "^8.2",
+        "symfony/serializer": "^6.3 || ^7.0",
+        "jms/serializer": "^3.32"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.75"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
