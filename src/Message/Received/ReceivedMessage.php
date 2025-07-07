@@ -44,6 +44,10 @@ class ReceivedMessage
     #[JMS\Type('string')]
     private ?string $mediaGroupId = null;
 
+    #[JMS\Expose]
+    #[JMS\Type('string')]
+    private ?string $caption = null;
+
     public function getMessageId(): ?int
     {
         return $this->messageId;
@@ -117,5 +121,18 @@ class ReceivedMessage
     public function isPartOfMediaGroup(): bool
     {
         return $this->mediaGroupId !== null;
+    }
+
+    public function getCaption(): ?string
+    {
+        return $this->caption;
+    }
+
+    /**
+     * Возвращает текст сообщения или подпись к медиа
+     */
+    public function getCombinedText(): ?string
+    {
+        return $this->text ?? $this->caption;
     }
 }
