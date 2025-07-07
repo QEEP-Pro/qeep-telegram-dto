@@ -36,7 +36,7 @@ class ReceivedMessage
 
     #[JMS\Expose]
     #[JMS\SerializedName('photo')]
-    #[JMS\Type('array<App\DTO\Telegram\Message\Received\PhotoMessage>')]
+    #[JMS\Type('array<QEEP\Telegram\DTO\Message\Received\PhotoMessage>')]
     private ?array $photos = null;
 
     #[JMS\Expose]
