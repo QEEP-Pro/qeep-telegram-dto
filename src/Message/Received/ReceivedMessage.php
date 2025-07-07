@@ -3,7 +3,6 @@
 namespace QEEP\Telegram\DTO\Message\Received;
 
 use DateTimeImmutable;
-use DateTimeInterface;
 use JMS\Serializer\Annotation as JMS;
 
 #[JMS\ExclusionPolicy(JMS\ExclusionPolicy::ALL)]
@@ -60,7 +59,7 @@ class ReceivedMessage
         return $this->chat;
     }
 
-    public function getDate(): ?DateTimeInterface
+    public function getDate(): ?int
     {
         return $this->date;
     }
