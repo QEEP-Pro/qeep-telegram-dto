@@ -6,9 +6,9 @@ class ResponseToSendMessage
 {
     public function __construct(
         public string $status,
-        public int $chat_id,
-        public string $bot_token,
-        public ?int $message_id = null,
+        public int $chatId,
+        public string $botToken,
+        public ?int $messageId = null,
         public ?string $error = null,
     ) {}
 }
