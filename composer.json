@@ -18,7 +18,7 @@
         "fix": "vendor/bin/php-cs-fixer fix"
     },
     "require": {
-        "php": "^8.2",
+        "php": "^8.3",
         "symfony/serializer": "^6.3 || ^7.0",
         "jms/serializer": "^3.32"
     },

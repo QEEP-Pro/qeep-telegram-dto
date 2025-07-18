@@ -7,6 +7,11 @@ use JMS\Serializer\Annotation as JMS;
 #[JMS\ExclusionPolicy(JMS\ExclusionPolicy::ALL)]
 class MessageChat
 {
+    public const string CHAT_TYPE_PRIVATE = 'private';
+    public const string CHAT_TYPE_GROUP = 'group';
+    public const string CHAT_TYPE_SUPERGROUP = 'supergroup';
+    public const string CHAT_TYPE_CHANNEL = 'channel';
+
     #[JMS\Expose]
     #[JMS\Type('int')]
     private int $id;
